@@ -1,0 +1,205 @@
+.fp_gallery{ width:960px;}
+img.fp_bgImage{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	opacity:0.2;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+}
+ul.fp_galleryList{
+	list-style:none;
+	position:relative;
+}
+ul.fp_galleryList li{
+	float:left;
+	text-transform:uppercase;
+	cursor:pointer;
+	font-size:14px;
+}
+ul.fp_galleryList li.first{margin-right:20px;}
+ul.fp_galleryList li.current{
+	color:#FFED2F;
+}
+ul.fp_galleryList li.current .promotional{
+	border:none;
+	background:#404040;
+}
+ul.fp_galleryList li:hover .promotional{
+	background:#404040;
+}
+#fp_thumbContainer{
+	position:relative;
+	overflow:hidden;
+	width:100%;
+	float:left;
+}
+#fp_thumbScroller{
+	position:relative;
+	overflow:hidden;	
+}
+#fp_thumbScroller .container{
+	position:relative;
+	float:left;
+	display:none;
+}
+#fp_thumbScroller .content{
+	float:left;
+	margin-top:17px;
+}
+#fp_thumbScroller .content div{
+	margin:0px 5px;
+}
+#fp_thumbScroller a{
+	padding:1px;
+}
+.fp_overlay{
+	display:none;
+	position:fixed;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	z-index:10;
+	background:#000;
+	opacity:0.8;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+}
+.fp_loading{
+	display:none;
+	position:fixed;
+	top:50%;
+	left:50%;
+	margin:-35px 0px 0px -35px;
+	background:#fff url(../images/loader.gif) no-repeat center center;
+	width:70px;
+	height:70px;
+	z-index:9999;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	-moz-box-shadow:1px 1px 3px #000;
+	-webkit-box-shadow:1px 1px 3px #000;
+	box-shadow:1px 1px 3px #000;
+	opacity:0.7;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+.fp_next,
+.fp_prev,
+.fp_close{
+	width:50px;
+	height:50px;
+	position:fixed;
+	bottom:50%;
+	margin-top:-25px;
+	cursor:pointer;
+	opacity:0.7;
+	z-index:1000;
+	-moz-box-shadow:0px 0px 3px #000;
+	-webkit-box-shadow:0px 0px 3px #000;
+	box-shadow:0px 0px 3px #000;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+.fp_next:hover,
+.fp_prev:hover,
+.fp_close:hover
+{
+	opacity:0.9;
+}
+.fp_next{
+	background:#fff url(../images/next.png) no-repeat center center;
+	right:-50px; /*10 to show*/
+}
+.fp_prev{
+	background:#fff url(../images/prev.png) no-repeat center center;
+	left:-50px; /*10 to show*/
+}
+.fp_close{
+	display:none;
+	width:170px;
+	text-align:center;
+	padding-left:10px;
+	text-transform:uppercase;
+	line-height:50px;
+	top:10px;
+	right:10px;
+	margin-top:0px;
+	background:#fff url(../images/close.png) no-repeat 10px 50%;
+	color:#000;
+}
+.fp_scrollWrapper{
+	display:none;
+	width:400px;
+/*	padding:10px 45px;*/
+	height:7px;
+	position:relative;
+	margin:30px auto 30px 285px;
+	background:#BCA474;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	float:left;
+}
+.ui-widget-content{
+/*	height:12px;
+	background-color:#353535;	
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;*/
+	position:relative;
+
+}
+.ui-slider-horizontal .ui-slider-handle{
+	margin-top:1px;
+	z-index:1;
+	outline:none;
+	cursor:pointer;
+	border:none;
+	width:20px;
+	height:12px;
+	background: #404040;
+	margin-left:-7px;
+}
+.ui-state-default {
+	background-image:none;
+}
+.fp_prev_thumb,
+.fp_next_thumb{
+	background:transparent url(../images/nav.png) no-repeat top left;
+	position:absolute;
+	top:8px;
+	width:15px;
+	height:17px;
+	cursor:pointer;
+}
+.fp_prev_thumb:hover{
+	background-position:left top;
+}
+.fp_next_thumb:hover{
+	background-position:right top;
+}
+.fp_prev_thumb{
+	left:10px;
+	background-position:left bottom;
+}
+.fp_next_thumb{
+	right:10px;
+	background-position:right bottom;
+}
+img.fp_preview{
+	position:fixed;
+	z-index:999;
+	border:3px solid #fff;
+	-moz-box-shadow:1px 1px 3px #000;
+	-webkit-box-shadow:1px 1px 3px #000;
+	box-shadow:1px 1px 3px #000;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	opacity:0;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);	
+}
+.outer .product-name{min-height:45px;}
